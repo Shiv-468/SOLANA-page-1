@@ -45,6 +45,41 @@
     --text-bluegreen: #00BCD4;
 
     --text-gray2: #848895;
+        --bg-lightblack: #111111;
+        
+            /* linear-gradient */
+            --header-gradient: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+            --nav-gradient: rgba(0, 0, 0, 0.6);
+            --btn1-gradient: linear-gradient(98.88deg, #8C01FA -2.99%, #000000 102.28%);
+        
+            /* text-color */
+            --dropdown-text-color: #848895;
+            --blue: #618ADC;
+            --gray: #C4C4C4;
+}
+.text_blue {
+    color: var(--blue);
+}
+
+.text_gray {
+    color: var(--gray);
+}
+
+.dropdown_color {
+    color: var(--dropdown-text-color);
+}
+
+
+.header_gradient {
+    background: var(--header-gradient);
+}
+
+.nav_gradient {
+    background: var(--nav-gradient);
+}
+
+.bg_lightblack {
+    background: var(--bg-lightblack);
 }
 
 .text_gray2 {
