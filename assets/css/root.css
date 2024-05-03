@@ -70,7 +70,6 @@
     color: var(--dropdown-text-color);
 }
 
-
 .header_gradient {
     background: var(--header-gradient);
 }
@@ -248,8 +247,6 @@
         --font-size-10xl: 68px;
         --font-size-11xl: 70px;
         --font-size-12xl: 110px;
-
-
         --line-height-8xl: 132px;
         --line-height-3xl: 27.3px;
         --line-height-7xl: 75.6px;

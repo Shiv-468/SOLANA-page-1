@@ -11,7 +11,6 @@
 
 .font_family_roboto {
     font-family: "Roboto", sans-serif;
-
 }
 
 @font-face {
@@ -56,6 +55,9 @@
 }
 
 
+.py_20px {
+    padding: 20px 0;
+}
 
 .pt_14px {
     padding-top: 14px;
@@ -72,8 +74,6 @@
 .gap_11px {
     gap: 11px;
 }
-
-
 
 .last_section_padding_bottom {
     padding-bottom: 50px;
@@ -206,8 +206,6 @@
 
 }
 
-
-
 /* css by dushyant */
 .container_width {
     max-width: 1140px;
@@ -217,47 +215,16 @@
     cursor: pointer;
 }
 
-
 /* section1-css */
 
 .padding_top_40 {
     padding-top: 40px;
 }
 
-.dropbtn1 {
-    background: var(--arrow-bg);
-    padding: 7.5px 16px 7.5px 12.3px !important;
-    width: 101px !important;
+.dropbtn {
+    background-color: transparent;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.dropbtn2 {
-    background: var(--arrow-bg);
-    padding: 7.5px 16px 7.5px 12.3px !important;
-    width: 95px !important;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.dropbtn3 {
-    background: var(--arrow-bg);
-    padding: 7.5px 16px 7.5px 12.3px !important;
-    width: 124px !important;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.dropbtn4 {
-    background: var(--arrow-bg);
-    padding: 7.5px 16px 7.5px 12.3px !important;
-    width: 147px !important;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    width: 100%;
 }
 
 .dropdown {
@@ -269,22 +236,24 @@
     display: none;
     position: absolute;
     background-color: transparent;
-    width: 100%;
-    border-radius: 8px;
-    overflow: auto;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown-content a {
-    padding: 8px;
-    text-decoration: none;
-    display: block;
-    background: var(--header-gradient);
+.gap_32 {
+    gap: 32px;
 }
 
-.show {
-    display: block !important;
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .max_width_header_para {
@@ -315,9 +284,7 @@
     top: 0;
     right: 0;
 }
-
 /* section2-css */
-
 
 .gradient_text {
     background: linear-gradient(to left, #19FB9B 50%, #8C01FA 100%);
@@ -336,8 +303,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 /* section3-css */
 
@@ -420,11 +385,9 @@
     right: 0;
 }
 
-
 .menuicon.show .bar:nth-child(1) {
     transform: translateY(5px) rotate(47deg);
     transition: all 400ms ease-in;
-
 }
 
 .menuicon.show .bar:nth-child(2) {
@@ -506,6 +469,7 @@
     .padding_bottom_125 {
         padding-bottom: 125px !important;
     }
+
     .py_94px {
         padding-top: 94px !important;
         padding-bottom: 94px !important;
