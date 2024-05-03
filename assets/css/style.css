@@ -56,7 +56,8 @@
 
 
 .py_20px {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .pt_14px {
@@ -348,10 +349,6 @@
     background-position: center;
 }
 
-.pt_64 {
-    padding-top: 64px;
-}
-
 .pb_80 {
     padding-bottom: 80px;
 }
@@ -378,6 +375,7 @@
     height: 5px;
     width: 35px;
     border-radius: 6px;
+    transition: all 300ms linear;
     background-color: white;
 }
 
@@ -385,19 +383,7 @@
     right: 0;
 }
 
-.menuicon.show .bar:nth-child(1) {
-    transform: translateY(5px) rotate(47deg);
-    transition: all 400ms ease-in;
-}
 
-.menuicon.show .bar:nth-child(2) {
-    display: none;
-}
-
-.menuicon.show .bar:nth-child(3) {
-    transition: all 400ms ease-in;
-    transform: translateY(-5px) rotate(-52deg);
-}
 
 @media (max-width:992px) {
     .menulist {
@@ -411,15 +397,29 @@
         justify-content: center;
         right: -100%;
         z-index: 50 !important;
-        background: blue;
+        background: linear-gradient(180deg, #19161C 0%, #000000 100%);
         transition: all 300ms linear;
     }
-
+    .menuicon.show .bar:nth-child(1) {
+        transform: translateY(5px) rotate(47deg);
+        transition: all 400ms linear !important;
+    }
+    
+    .menuicon.show .bar:nth-child(2) {
+        display: none;
+        transition: all 400ms linear;
+    }
+   
+    .menuicon.show .bar:nth-child(3) {
+        transition: all 400ms linear !important;
+        transform: translateY(-5px) rotate(-52deg);
+    }
     .menuicon {
         z-index: 51 !important;
         display: flex !important;
         flex-direction: column;
         gap: 6px;
+        transition: all 400ms linear;
     }
 
     .zindex {
@@ -457,7 +457,9 @@
     .last_section_padding_bottom {
         padding-bottom: 150px;
     }
-
+    .pt_64 {
+        padding-top: 64px;
+    }
     .lastSection_padding_top {
         padding-top: 125px;
     }
