@@ -7,28 +7,36 @@
     <title>SOLANA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/css/style2.css">
 </head>
 
 <body>
-    <section class="header_gradient ">
+    <section class="header_gradient d-none d-lg-block">
         <h3
             class="mb-0 font_family_roboto fw-normal text-center text-black font_size_md  line_height_3xl text-uppercase">
             Breakpoint 2023 - New City. New Vibes - Get Early Access -></h3>
     </section>
     <section class="bg-black d-flex min-vh-100 flex-column position-relative overflow-hidden">
-        <img class="position-absolute position_left_img z-0 d-none d-xl-block"
-            src="./assets/images/webp/section1_left_img.png" alt="section1_left_img">
+        <img class="position-absolute position_left_img z-0 " src="./assets/images/webp/section1_left_img.png"
+            alt="section1_left_img">
         <img class="position-absolute position_right_img z-0 d-none d-xl-block"
             src="./assets/images/webp/section1_right_img.png" alt="section1_right_img">
         <div class="nav_gradient z-1">
             <nav class="container_width mx-auto container  d-flex align-items-center justify-content-between py-3">
                 <img src="./assets/images/svg/logo.svg" alt="logo">
 
-                <div>
+                <div class="menulist  d-flex gap_32 align-items-center z-2 p-0 m-0">
                     <div class="dropdown">
                         <button onclick="myFunction()"
-                            class="dropbtn font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Learn
+                            class="dropbtn1 font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Learn
                             <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -45,7 +53,7 @@
                     </div>
                     <div class="dropdown">
                         <button onclick="myFunction()"
-                            class="dropbtn font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Build
+                            class="dropbtn2 font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Build
                             <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -62,7 +70,7 @@
                     </div>
                     <div class="dropdown">
                         <button onclick="myFunction()"
-                            class="dropbtn font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Network
+                            class="dropbtn3 font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Network
                             <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -79,7 +87,7 @@
                     </div>
                     <div class="dropdown">
                         <button onclick="myFunction()"
-                            class="dropbtn font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Community
+                            class="dropbtn4 font_size_md line_height_3xl fw-normal d-flex gap-1 align-items-center dropdown_color">Community
                             <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -95,40 +103,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="menuicon d-flex flex-column d-block d-lg-none z-3">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
         <div
-            class="container mx-auto container_width d-flex  flex-grow-1 flex-column align-items-center justify-content-center z-2">
-            <div class="d-flex flex-column align-items-center">
+            class="container mx-auto container_width d-flex  flex-grow-0 flex-lg-grow-1 flex-column align-items-center justify-content-center z-2">
+            <div class="d-flex flex-column align-items-center pt-5 pt-lg-0">
                 <h2 class="text-white font_family_Helvetica fw-normal font_size_11xl line_height_7xl mb-0 text-center">
                     Powerful for
                     developers.</h2>
-                <h2 class="text-white font_family_Helvetica fw-normal font_size_10xl line_height_7xl mb-0 text-center">
+                <h2 class="text-white font_family_Helvetica fw-normal font_size_10xl line_height_7xl mb-0 text-center pt-1">
                     Fast for
                     everyone.</h2>
                 <p
-                    class="font_family_Helvetica fw-normal font_size_2xl line_height_3xl text-white max_width_header_para padding_top_55 mb-0 pb-5">
+                    class="font_family_Helvetica text-center fw-normal font_size_2xl line_height_3xl text-white max_width_header_para padding_top_55 padding_top_40 mb-0 pb-4 pb-lg-5">
                     Bring blockchain to the people. Solana supports experiences for power users, new consumers, and
                     everyone in between.</p>
-                <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center flex-wrap gap-3 justify-content-center">
                     <button
-                        class="header_btn1 text-white font_family_roboto font_size_xsm line_height_2xl text-uppercase fw-normal">Start
+                        class="header_btn1 text-white text-nowrap font_family_roboto font_size_xsm line_height_2xl text-uppercase fw-normal">Start
                         building</button>
                     <button
-                        class="header_btn2 text-white text-uppercase font_family_roboto font_size_xsm line_height_2xl">Read
+                        class="header_btn1 text-white text-nowrap text-uppercase font_family_roboto font_size_xsm line_height_2xl">Read
                         docs</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-black">
+    <section class="bg-black overflow-hidden">
         <div class="container mx-auto container_width">
             <p
                 class="mb-0 font_family_Helvetica fw-normal font_size_xsm line_height_lg text-uppercase text_blue text-center pb-4">
                 Powering tools and integrations from companies all around the world</p>
-            <div class="d-flex align-items-center gap-4 justify-content-center">
+            <div class="logo_slider ">
                 <img src="./assets/images/svg/brave.svg" alt="brave">
                 <img src="./assets/images/svg/circle.svg" alt="circle">
+                <img src="./assets/images/svg/discord.svg" alt="discord">
+                <img src="./assets/images/svg/google.svg" alt="google">
+                <img src="./assets/images/svg/jump.svg" alt="jump">
+                <img src="./assets/images/svg/lollapalooza.svg" alt="lollapalooza">
+                <img src="./assets/images/svg/magiceden.svg" alt="magiceden">
                 <img src="./assets/images/svg/discord.svg" alt="discord">
                 <img src="./assets/images/svg/google.svg" alt="google">
                 <img src="./assets/images/svg/jump.svg" alt="jump">
@@ -139,9 +157,9 @@
     </section>
     <section class="bg-black section3_baground_img min-vh-100">
         <div class="container mx-auto container_width">
-            <div class="row pt_124 pb_80">
-                <div class="col-6">
-                    <div class="d-flex flex-column justify-content-start pt_77">
+            <div class="row padding_top_124 pb_80">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column justify-content-start padding_top_77 pt-5 pt-lg-0">
                         <h4 class="text-white font_family_Helvetica fw-normal font_size_7xl line_height_6xl mb-0">Join a
                             community</h4>
                         <h4 class="text-white font_family_Helvetica fw-normal font_size_7xl line_height_6xl mb-0">of
@@ -149,8 +167,8 @@
                         </h4>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="d-flex flex-column justify-content-start gap-5">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column justify-content-start gap-lg-5">
                         <div class="m-0">
                             <h2
                                 class="mb-0 font_family_Helvetica fw-normal font_size_12xl line_height_8xl gradient_text">
@@ -181,68 +199,96 @@
         </div>
         <div class="container mx-auto container_width">
             <div class="row pt_64 pb-2">
-                <div class="col-4 pt_64">
+                <div class="col-12 col-md-6 col-lg-4 pt_64 z-1">
                     <p class="font_family_Helvetica mb-0 fw-normal text-white font_size_9xl line_height_6xl">Made for
                     </p>
                     <p class="font_family_Helvetica mb-0 fw-normal text-white font_size_7xl line_height_6xl">mass
-                        adoption</p>
+                        adoption .</p>
                     <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span
                             class="ps-1 fw-normal font_family_roboto text-uppercase font_size_sm line_height_md text_gray">Live
                             data</span></p>
                 </div>
-                <div class="col-4 pt_64">
+                <div class="col-12 col-md-6 col-lg-4 pt_64 z-1">
                     <div class="section3_box">
                         <div class="max_width_250">
                             <div class="section3_borderline">
-                                <p class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">Fast</p>
+                                <p
+                                    class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">
+                                    Fast</p>
                             </div>
-                            <p class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">Don’t keep your users waiting. Solana has block times of
+                            <p
+                                class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">
+                                Don’t keep your users waiting. Solana has block times of
                                 400 milliseconds — and as hardware gets faster, so will the
                                 network.</p>
-                            <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">3,969</span></p>
-                            <p class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">Transactions per second</p>
+                            <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span
+                                    class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">3,969</span>
+                            </p>
+                            <p
+                                class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
+                                Transactions per second</p>
                         </div>
                     </div>
-                    <div class="section3_box">
+                    <div class="section3_box mt-2">
                         <div class="max_width_250">
                             <div class="section3_borderline2">
-                                <p class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">Scalable</p>
+                                <p
+                                    class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">
+                                    Scalable</p>
                             </div>
-                            <p class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users
-                            remain less than $0.01.</p>
+                            <p
+                                class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">
+                                Get big, quick. Solana is made to handle thousands of transactions per second, and fees
+                                for both developers and users
+                                remain less than $0.01.</p>
                             <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span
-                                    class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">163,077,581,394</span></p>
-                            <p class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
+                                    class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">163,077,581,394</span>
+                            </p>
+                            <p
+                                class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
                                 Total transactions</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4 z-1">
                     <div class="section3_box">
                         <div class="max_width_250">
                             <div class="section3_borderline3">
-                                <p class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">Decentralized</p>
+                                <p
+                                    class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3">
+                                    Decentralized</p>
                             </div>
-                            <p class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data
-                            remains secure and censorship resistant.</p>
+                            <p
+                                class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">
+                                The Solana network is validated by thousands of nodes that operate independently of each
+                                other, ensuring your data
+                                remains secure and censorship resistant.</p>
                             <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span
-                                    class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">1,675</span></p>
-                            <p class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
+                                    class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">1,675</span>
+                            </p>
+                            <p
+                                class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
                                 Validator nodes</p>
                         </div>
                     </div>
-                    <div class="section3_box">
+                    <div class="section3_box mt-3">
                         <div class="max_width_250">
                             <div class="section3_borderline4">
-                                <p class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3 flex-nowrap">Energy Efficient
+                                <p
+                                    class="text-white font_family_Helvetica mb-0 fw-normal font_size_4xl line_height_5xl ps-3 text-nowrap">
+                                    Energy Efficient
                                 </p>
                             </div>
-                            <p class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">Solana’s proof of stake network and other innovations minimize its impact on the environment. Each Solana transaction
-                            uses about the same energy as a few Google searches.</p>
+                            <p
+                                class="font_family_Helvetica mb-0 fw-normal font_size_md line_height_3xl text_gray pt-2 pb-4">
+                                Solana’s proof of stake network and other innovations minimize its impact on the <span
+                                    class="text_green cursor_pointer">environment.</span> Each Solana transaction
+                                uses about the same energy as a few Google searches.</p>
                             <p class="mb-0"><img src="./assets/images/webp/blue-dot.png" alt="dot"><span
                                     class="font_family_Helvetica mb-0 fw-normal font_size_5xl text-white ps-1">0%</span>
                             </p>
-                            <p class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
+                            <p
+                                class="text-uppercase font_family_roboto fw-normal font_size_sm line_height_3xl mb-0 text_gray pt-2">
                                 Net carbon impact</p>
                         </div>
                     </div>
@@ -250,10 +296,81 @@
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        $('.logo_slider').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 2000,
+            pauseOnHover: true,
+            cssEase: 'linear',
+            infinite: true,
+            dots: false,
+            arrows: false,
+            variableWidth: true,
+            slidesToShow: 4,
+            pauseOnHover: false,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        cssEase: 'linear'
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        cssEase: 'linear'
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        cssEase: 'linear'
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        
+            const menuicon = document.querySelector(".menuicon");
+            const menulist = document.querySelector(".menulist");
+            const navlink = document.querySelectorAll(".nav-links")
+            navlink.forEach(a => a.addEventListener("click", () => {
+                menulist.classList.remove("show");
+                document.body.classList.remove("overflow-hidden");
+                menuicon.classList.toggle("show");
+            }))
+            menuicon.addEventListener("click", () => {
+                menulist.classList.toggle("show");
+                document.body.classList.toggle("overflow-hidden");
+                menuicon.classList.toggle("show");
+            });
+
+    </script>
 </body>
 
 </html>

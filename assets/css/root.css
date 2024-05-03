@@ -1,12 +1,12 @@
 :root {
     /* font-size */
     --font-size-xxsm: 12px;
-    --font-size-xsm: 15px;
+    --font-size-xsm: 13px;
     --font-size-sm: 16px;
     --font-size-md: 17px;
     --font-size-lg: 18px;
     --font-size-xl: 20px;
-    --font-size-2xl: 21px;
+    --font-size-2xl: 16px;
     --font-size-3xl: 25px;
     --font-size-4xl: 26px;
     --font-size-5xl: 28px;
@@ -14,9 +14,9 @@
     --font-size-7xl: 38px;
     --font-size-8xl: 39px;
     --font-size-9xl: 42px;
-    --font-size-10xl: 68px;
-    --font-size-11xl: 70px;
-    --font-size-12xl: 110px;
+    --font-size-10xl: 47px;
+    --font-size-11xl: 52px;
+    --font-size-12xl: 72px;
 
     /* line-height*/
     --line-height-sm: 15.36px;
@@ -24,11 +24,11 @@
     --line-height-lg: 16.8px;
     --line-height-xl: 18.72px;
     --line-height-2xl: 20px;
-    --line-height-3xl: 27.3px;
+    --line-height-3xl: 22px;
     --line-height-4xl: 28px;
     --line-height-5xl: 33.04px;
     --line-height-6xl: 46.2px;
-    --line-height-7xl: 75.6px;
+    --line-height-7xl: 50px;
     --line-height-8xl: 132px;
     /* background-colors */
     --bg-lightblack: #111111;
@@ -45,18 +45,19 @@
     --text-bluegreen: #00BCD4;
 
     --text-gray2: #848895;
-        --bg-lightblack: #111111;
-        
-            /* linear-gradient */
-            --header-gradient: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
-            --nav-gradient: rgba(0, 0, 0, 0.6);
-            --btn1-gradient: linear-gradient(98.88deg, #8C01FA -2.99%, #000000 102.28%);
-        
-            /* text-color */
-            --dropdown-text-color: #848895;
-            --blue: #618ADC;
-            --gray: #C4C4C4;
+    --bg-lightblack: #111111;
+
+    /* linear-gradient */
+    --header-gradient: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+    --nav-gradient: rgba(0, 0, 0, 0.6);
+    --btn1-gradient: linear-gradient(98.88deg, #8C01FA -2.99%, #000000 102.28%);
+
+    /* text-color */
+    --dropdown-text-color: #848895;
+    --blue: #618ADC;
+    --gray: #C4C4C4;
 }
+
 .text_blue {
     color: var(--blue);
 }
@@ -238,4 +239,19 @@
 
 .line_height_8xl {
     line-height: var(--line-height-8xl);
+}
+
+@media (min-width:768px) {
+    :root {
+        --font-size-xsm: 15px;
+        --font-size-2xl: 21px;
+        --font-size-10xl: 68px;
+        --font-size-11xl: 70px;
+        --font-size-12xl: 110px;
+
+
+
+        --line-height-3xl: 27.3px;
+        --line-height-7xl: 75.6px;
+    }
 }
