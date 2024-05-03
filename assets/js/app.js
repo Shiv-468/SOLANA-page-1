@@ -17,6 +17,64 @@ window.onclick = function (event) {
         }
     }
 };
+$('.logo_slider').slick({
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 2000,
+    pauseOnHover: true,
+    cssEase: 'linear',
+    infinite: true,
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    slidesToShow: 4,
+    pauseOnHover: false,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                cssEase: 'linear'
+
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                cssEase: 'linear'
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                cssEase: 'linear'
+            }
+        }
+    ]
+});
+const menuicon = document.querySelector(".menuicon");
+const menulist = document.querySelector(".menulist");
+const navlink = document.querySelectorAll(".nav-links")
+navlink.forEach(a => a.addEventListener("click", () => {
+    menulist.classList.remove("show");
+    document.body.classList.remove("overflow-hidden");
+    menuicon.classList.toggle("show");
+}))
+menuicon.addEventListener("click", () => {
+    menulist.classList.toggle("show");
+    document.body.classList.toggle("overflow-hidden");
+    menuicon.classList.toggle("show");
+});
 <<<<<<< HEAD
 =======
 const tabcontant = document.querySelectorAll(".tabcontant");
