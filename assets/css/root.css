@@ -29,7 +29,7 @@
     --line-height-5xl: 33.04px;
     --line-height-6xl: 46.2px;
     --line-height-7xl: 50px;
-    --line-height-8xl: 132px;
+    --line-height-8xl: 110px;
     /* background-colors */
     --bg-lightblack: #111111;
     --bg-light-black2: #1A1A1A;
@@ -250,7 +250,7 @@
         --font-size-12xl: 110px;
 
 
-
+        --line-height-8xl: 132px;
         --line-height-3xl: 27.3px;
         --line-height-7xl: 75.6px;
     }
