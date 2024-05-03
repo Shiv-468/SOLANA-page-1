@@ -156,8 +156,7 @@
 
 .lastSection_btn:hover {
     background: transparent;
-    color: #8C01FA !important;
-    border: 1px solid #8C01FA;
+    border: 1px solid white;
 }
 
 .slick-slide {
@@ -236,8 +235,8 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
-    min-width: 160px;
+    background: linear-gradient(261.81deg, #19FB9B -8.01%, #8C01FA 100%);
+    min-width:100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -341,7 +340,10 @@
     height: 33px;
     background: #19FB9B
 }
-
+.logo_slider .slick-track{
+ display: flex !important;
+ align-items: center;
+}
 .section3_baground_img {
     background-image: url(../images/webp/section3_img.jpg);
     background-repeat: no-repeat;
@@ -363,7 +365,7 @@
     margin: 0 -15px;
 }
 
-.slick-slide {
+.logo_slider .slick-slide {
     text-align: center;
     margin-right: 20px;
     margin-left: 20px;
