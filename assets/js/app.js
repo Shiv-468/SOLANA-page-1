@@ -61,6 +61,7 @@ $('.logo_slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
+                centerMode: true,
                 cssEase: 'linear'
             }
         }
@@ -93,4 +94,18 @@ function clickhere(tabs) {
     tabsactive.forEach(e => e.classList.remove("active"))
     const selecttab = document.querySelector(`button[onclick="clickhere('${tabs}')"]`)
     selecttab.classList.add("active")
+};
+// Get the button
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
