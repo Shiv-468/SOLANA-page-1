@@ -14,6 +14,7 @@
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/svg/favico.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -22,14 +23,15 @@
         <div class="container max_width_1140px padding_top_125 padding_bottom_125 pt-5 pb-5">
             <div class="d-flex align-items-center justify-content-between flex-wrap">
                 <h3 class="text-white font_size_8xl fw-normal letter_sapacing_1px line_height_6xl mb-0 pb-4 pb-md-0 font_family_Helvetica">Build for growth.</h3>
-                <ul class="d-flex align-items-center gap-2 gap-sm-3 mb-0 ps-0 flex-wrap">
-                    <li><a href="" class="text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">NFTs</a></li>
-                    <li><a href="" class="text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">DeFi</a></li>
-                    <li><a href="" class="text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">Payments</a></li>
-                    <li><a href="" class="text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">Gaming</a></li>
-                    <li><a href="" class="text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">DAOs</a></li>
-                </ul>
+                <div class="d-flex align-items-center gap-2 gap-sm-3 flex-wrap allbtn">
+                    <button onclick="clickhere('tab1')" class="tabbtn text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">NFTs</button>
+                    <button onclick="clickhere('tab2')" class="tabbtn text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">DeFi</button>
+                    <button onclick="clickhere('tab3')" class="tabbtn text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">Payments</button>
+                    <button onclick="clickhere('tab4')" class="tabbtn text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">Gaming</button>
+                    <button onclick="clickhere('tab5')" class="tabbtn text-white font_size_xsm line_height_3xl growth_links font_family_Helvetica">DAOs</button>
+                </div>
             </div>
+           <div id="tab1" class="tabcontant">
             <div class="row paddingTop_32px">
                 <div class="col-6 col-12 col-md-6 pe-md-0">
                     <img src="./assets/images/webp/man_with_mobile.png" alt="man_with_mobile" class="w-100 h-100">
@@ -47,6 +49,83 @@
                     </div>
                 </div>
             </div>
+           </div>
+           <div id="tab2" class="tabcontant">
+            <div class="row paddingTop_32px">
+                <div class="col-6 col-12 col-md-6 pe-md-0">
+                    <img src="./assets/images/webp/partyPic.png" alt="man_with_mobile" class="w-100 h-100">
+                </div>
+                <div class="col-6 col-12 col-md-6 ps-md-0">
+                    <div class="d-flex ps-sm-5 px-4 align-items-center bg_light_black2 h-100 py_94px">
+                        <div class="max_width_440 ">
+                            <img src="./assets/images/svg/anybodies_logo.svg" alt="anybodies_logo" class="anybodies_logo_height_width">
+                            <p class="text-white fw-normal font_size_2xl line_height_3xl pt_14px mb-0 font_family_Helvetica">It’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect real-life places and products with NFTs.</p>
+                            <div class="d-flex align-items-center gap-1 pt_14px">
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">Learn more about</a>
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">NFTs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div id="tab3" class="tabcontant">
+            <div class="row paddingTop_32px">
+                <div class="col-6 col-12 col-md-6 pe-md-0">
+                    <img src="./assets/images/webp/solanawormholf.png" alt="man_with_mobile" class="w-100 h-100">
+                </div>
+                <div class="col-6 col-12 col-md-6 ps-md-0">
+                    <div class="d-flex ps-sm-5 px-4 align-items-center bg_light_black2 h-100 py_94px">
+                        <div class="max_width_440 ">
+                            <img src="./assets/images/svg/anybodies_logo.svg" alt="anybodies_logo" class="anybodies_logo_height_width">
+                            <p class="text-white fw-normal font_size_2xl line_height_3xl pt_14px mb-0 font_family_Helvetica">It’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect real-life places and products with NFTs.</p>
+                            <div class="d-flex align-items-center gap-1 pt_14px">
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">Learn more about</a>
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">NFTs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div id="tab4" class="tabcontant">
+            <div class="row paddingTop_32px">
+                <div class="col-6 col-12 col-md-6 pe-md-0">
+                    <img src="./assets/images/webp/coach.png" alt="man_with_mobile" class="w-100 h-100">
+                </div>
+                <div class="col-6 col-12 col-md-6 ps-md-0">
+                    <div class="d-flex ps-sm-5 px-4 align-items-center bg_light_black2 h-100 py_94px">
+                        <div class="max_width_440 ">
+                            <img src="./assets/images/svg/anybodies_logo.svg" alt="anybodies_logo" class="anybodies_logo_height_width">
+                            <p class="text-white fw-normal font_size_2xl line_height_3xl pt_14px mb-0 font_family_Helvetica">It’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect real-life places and products with NFTs.</p>
+                            <div class="d-flex align-items-center gap-1 pt_14px">
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">Learn more about</a>
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">NFTs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div id="tab5" class="tabcontant">
+            <div class="row paddingTop_32px">
+                <div class="col-6 col-12 col-md-6 pe-md-0">
+                    <img src="./assets/images/webp/partyPic.png" alt="man_with_mobile" class="w-100 h-100">
+                </div>
+                <div class="col-6 col-12 col-md-6 ps-md-0">
+                    <div class="d-flex ps-sm-5 px-4 align-items-center bg_light_black2 h-100 py_94px">
+                        <div class="max_width_440 ">
+                            <img src="./assets/images/svg/anybodies_logo.svg" alt="anybodies_logo" class="anybodies_logo_height_width">
+                            <p class="text-white fw-normal font_size_2xl line_height_3xl pt_14px mb-0 font_family_Helvetica">It’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect real-life places and products with NFTs.</p>
+                            <div class="d-flex align-items-center gap-1 pt_14px">
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">Learn more about</a>
+                                <a href="" class="mb-0 text_violet font_size_xl line_height_3xl fw-normal font_family_Helvetica">NFTs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
             <div class="row py-2 bg_xtra_lightBlack mx-0 marginTop_20px rounded-3">
                 <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
                     <img src="./assets/images/svg/claynosaurz.svg" alt="claynosaurz" class="w- 100">
@@ -244,6 +323,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./assets/js/app.js"></script>
   <script>
+    
     $('.community_slider').slick({
     autoplay: true,
     autoplaySpeed: 0,
@@ -288,6 +368,7 @@
         }
     ]
 });
+
   </script>
 
 </body>
