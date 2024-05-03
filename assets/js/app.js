@@ -18,7 +18,21 @@ window.onclick = function (event) {
     }
 };
 $('.logo_slider').slick({
-    autoplay: true,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    slidesToShow: 7,
+    pauseOnHover: false,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1094,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
     autoplaySpeed: 0,
     speed: 2000,
     pauseOnHover: true,
@@ -29,16 +43,6 @@ $('.logo_slider').slick({
     variableWidth: true,
     slidesToShow: 4,
     pauseOnHover: false,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                autoplay: true,
-                cssEase: 'linear'
 
             }
         },
@@ -75,8 +79,6 @@ menuicon.addEventListener("click", () => {
     document.body.classList.toggle("overflow-hidden");
     menuicon.classList.toggle("show");
 });
-<<<<<<< HEAD
-=======
 const tabcontant = document.querySelectorAll(".tabcontant");
 const firstcontant = document.querySelector(".tabcontant");
 const fistactivetab = document.querySelector(".allbtn button");
@@ -92,4 +94,3 @@ function clickhere(tabs) {
     const selecttab = document.querySelector(`button[onclick="clickhere('${tabs}')"]`)
     selecttab.classList.add("active")
 }
->>>>>>> fe2805cb8e9d153c24807fcd2d907fd0fb436734
