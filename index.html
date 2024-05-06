@@ -32,7 +32,20 @@ Fast for everyone.">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="overflow-hidden">
+  <div id="loadingOverlay">
+    <div class="loading-container" >
+        <div class="loading-text">
+          <span>L</span>
+          <span>O</span>
+          <span>A</span>
+          <span>D</span>
+          <span>I</span>
+          <span>N</span>
+          <span>G</span>
+        </div>
+      </div>
+  </div>
     <!-- code by dushyant start  -->
     <section class="header_gradient d-none d-lg-block">
         <h3
@@ -777,7 +790,15 @@ Fast for everyone.">
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
     <script>
-
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        let loadingOverlay = document.getElementById("loadingOverlay");
+        loadingOverlay.style.display = "none";
+        document.querySelector("body").classList.remove("overflow-hidden");
+      },2500);
+    });
+  });
         $('.community_slider').slick({
             autoplay: true,
             autoplaySpeed: 0,
