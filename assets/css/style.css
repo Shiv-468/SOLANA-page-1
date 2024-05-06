@@ -438,8 +438,8 @@
     }
 
     .menuicon.show .bar:nth-child(1) {
-        transform: translateY(5px) rotate(47deg);
-        transition: all 400ms linear !important;
+        transform: translate(1px , 6px) rotate(47deg);
+        transition: all 400ms ease-in;
     }
 
     .menuicon.show .bar:nth-child(2) {
