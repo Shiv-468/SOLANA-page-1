@@ -274,7 +274,20 @@
     border-radius: 36px;
     border: 1px solid rgba(255, 255, 255, 1);
 }
+.header_btn2 {
+    background: rgba(0, 0, 0, 1);
+    padding: 16px 33px;
+    border-radius: 36px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 300ms ease-in-out;
+}
 
+.header_btn2:hover {
+    background: var(--btn1-gradient);
+    padding: 16px 33px;
+    border-radius: 36px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
 .position_left_img {
     top: 0;
     left: 0;
